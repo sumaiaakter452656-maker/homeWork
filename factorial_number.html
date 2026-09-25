@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Factorial Program</title>
+</head>
+<body>
+
+  Enter a number: <input type="number" id="num">
+ 
+
+  <p id="answer"></p>
+
+  <script>
+    function findFactorial() {
+      let fact = 1;
+      let n = document.getElementById("num").value;
+
+      for (let i = 1; i <= n; i++) {
+        fact = fact * i;
+      }
+
+      document.getElementById("answer").innerHTML = n + "! = " + fact;
+    }
+  </script>
+
+ <button onclick="findFactorial()">Calculate</button>
+</body>
+</html>
